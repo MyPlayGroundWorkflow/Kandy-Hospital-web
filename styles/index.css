@@ -1,0 +1,300 @@
+/* Base Variables */
+:root {
+    --primary-color: #d8fcff;
+    --secondary-color: #fff;
+}
+
+/* Textbox Section */
+.textbox {
+    margin-top: 110px;
+    text-align: center;
+    font-size: 4vh;
+    color: black;
+    background-color: var(--primary-color);
+    border: solid black;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.textbox h1 {
+    margin-right: 10px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.appbtn {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background: white;
+    width: 140px;
+    padding: 13px;
+    border: black 3px solid;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.appbtn:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+    color: black;
+    border-color: black;
+}
+
+.hotline {
+    font-size: 18px;
+    color: red;
+    font-family: "Noto Serif", serif;
+    padding-left: 5px;
+}
+
+.content section h2{
+    margin: 20px;
+    text-align: right;
+    color: black;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+.container {
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--primary-color);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.container p {
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+}
+
+/* Background image */
+.bg {
+    background-image: url("../Pictures/doctor half.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-right: 60px;
+    border: solid black;
+}
+
+/* Services Section */
+.sercontainer {
+    padding: 15px;
+}
+
+.sercontainer .heading {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: black;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    font-size: 45px;
+}
+
+.sercontainer .box_ser {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+.sercontainer .box_ser .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 30px 20px;
+    border: solid black;
+}
+
+.sercontainer .box_ser .box img {
+    width: 100%;
+    max-width: 180px;
+}
+
+.sercontainer .box_ser .box h4 {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.sercontainer .box_ser .box p {
+    color: black;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid black;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    padding: 13px;
+    width: 150px;
+    margin-left: 45%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Facilities Section */
+.faci_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+
+.faci_container .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faci_container .grid {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 35px;
+    max-width: 300px;
+}
+
+.faci_container .bg {
+    background-image: url(../Pictures/slide1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 750px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.grid .box {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    height: 160px;
+}
+
+.grid .box h4 {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.grid .box p {
+    color: black;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .textbox, .sercontainer .heading, .grid .box h4 {
+        font-size: 3vh;
+    }
+
+    .sercontainer .box_ser {
+        grid-template-columns: 1fr;
+    }
+
+    .faci_container {
+        flex-direction: column;
+    }
+
+    .faci_container .image {
+        display: contents;
+    }
+
+    .grid{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bg {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .textbox {
+        font-size: 3.5vh;
+    }
+
+    .sercontainer .box_ser {
+        grid-template-columns: 1fr;
+    }
+
+    .grid .box {
+        height: auto;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .textbox {
+        font-size: 3vh;
+    }
+
+    .sercontainer .heading {
+        font-size: 30px;
+    }
+
+    .grid .box h4 {
+        font-size: 20px;
+    }
+
+    .appbtn {
+        width: 100px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .button {
+        width: 100%;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
