@@ -13,7 +13,7 @@
 .hotline {
     font-size: 18px;
     font-weight: bold;
-    margin-left: 43%;
+    margin-left: 45%;
     color: #007b5e;
 }
 
@@ -41,4 +41,23 @@
     background-color: var(--primary-color);
     color: black;
     border-color: black;
+}
+
+
+@media (max-width: 1200px) {
+    .hotline {
+        margin-left: 44%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hotline {
+        margin-left: 41%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hotline {
+        margin-left: 35%;
+    }
 }
