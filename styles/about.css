@@ -10,54 +10,6 @@ body {
     padding: 0;
 }
 
-.textbox {
-    margin-top: 110px;
-    text-align: center;
-    font-size: 4vh;
-    color: black;
-    background-color: var(--primary-color);
-    border: solid black;
-    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-}
-
-.textbox .h1 {
-    margin-right: 10px;
-    text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-}
-
-.appbtn {
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    background: white;
-    width: 140px;
-    padding: 13px;
-    border: black 3px solid;
-    text-align: center;
-    text-transform: uppercase;
-    color: black;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition-duration: 0.3s;
-    transition-property: box-shadow, transform;
-}
-
-.appbtn:hover, .btn:focus, .btn:active {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-    background-color: var(--primary-color);
-    color: black;
-    border-color: black;
-}
-
-.hotline {
-    font-size: 18px;
-    color: rgb(255, 0, 0);
-    font-family: "Noto Serif", serif;
-    padding-left: 5px;
-    font-weight: bold;
-}
 
 .container {
     margin-top: 50px;
